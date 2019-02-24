@@ -16,16 +16,7 @@ p {
 	border-radius: 3px;
 	padding: 10px;
 	box-shadow: 3px 5px 4px silver, -1px -1px 4px silver;
-	/*animation:anim 5s;
-animation-duration:5s;
-position: absolute;*/
 }
-
-/*@keyframes anim {
-from {left: -100%;}
-to {left: 75%;}
-}*/
-
 .notif_content {
 	width: 250px;
 	border: 1px solid black;
