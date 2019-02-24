@@ -1,0 +1,78 @@
+body {
+	width: 600px;
+	margin-left: 10%;
+}
+p {
+	font-size: 16pt;
+	text-align: justify;
+}
+#notification {
+	display: none;
+	position: fixed;
+	top: 20px;
+	right: 10px;
+	width: 330px;
+	height: 220px;	
+	border-radius: 3px;
+	padding: 10px;
+	box-shadow: 3px 5px 4px silver, -1px -1px 4px silver;
+	/*animation:anim 5s;
+animation-duration:5s;
+position: absolute;*/
+}
+
+/*@keyframes anim {
+from {left: -100%;}
+to {left: 75%;}
+}*/
+
+.notif_content {
+	width: 250px;
+	border: 1px solid black;
+	text-align: justify;
+	margin-bottom: 30px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.notif_content::before {
+	content: '×';
+	position: relative;
+	left: 280px;
+	top:-10px;
+	font-size: 30px;
+	cursor: pointer;
+}
+h6 {
+	text-transform: uppercase;
+}
+label {
+	margin-right: 30px;
+	margin-left: 5px;
+
+}
+input {
+	margin-right: 7px;
+}
+button {
+	border-radius: 50%;
+	border: 1px solid silver;
+}
+.slide {
+	width: 10px;
+	height: 12px;
+	border: transparent;
+	margin-right: 5px;
+}
+.one, .active {
+	background-color: dodgerblue;
+}
+.next, .prev {
+	width: 22px;
+	height: 22px;
+}
+.next{
+	margin-left: 10px;
+}
+.prev {
+	margin-right: 15px;
+}
