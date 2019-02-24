@@ -15,18 +15,12 @@ function toLocal() {
 	checkbox.addEventListener('keydown', setLocal);
 
 	function setLocal() {
-		if(checkbox.checked) {
-    		localStorage.setItem('check', "true");
-  		} else {
-   			localStorage.setItem('check', "false");
-   		}
-   		/*checkbox.checked ? localStorage.setItem('check', "true") : localStorage.setItem('check', "false");*/
+   		checkbox.checked ? localStorage.setItem('check', "true") : localStorage.setItem('check', "false");
 	}
 
 	if (localStorage.getItem('check') == "true") {
 		checkbox.setAttribute('checked','checked');
 		hide();
-		/*notif.setAttribute('hidden');*/
 	}
 }
 
